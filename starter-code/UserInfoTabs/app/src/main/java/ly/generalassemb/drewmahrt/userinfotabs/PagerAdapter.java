@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;
 
+
     public PagerAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
@@ -25,8 +26,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 return tab1;
             case 1:
                 //TODO: Add your second tab
+                AboutMeFragment tab2 = new AboutMeFragment();
+                return tab2;
             case 2:
                 //TODO: Add your third tab
+                ContactFragment tab3 = new ContactFragment();
                 return tab3;
             default:
                 return null;
